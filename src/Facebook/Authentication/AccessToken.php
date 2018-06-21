@@ -35,14 +35,14 @@ class AccessToken
      *
      * @var string
      */
-    protected $value = '';
+    protected string $value = '';
 
     /**
      * Date when token expires.
      *
      * @var \DateTime|null
      */
-    protected $expiresAt;
+    protected ?\DateTime $expiresAt = null;
 
     /**
      * Create a new access token entity.

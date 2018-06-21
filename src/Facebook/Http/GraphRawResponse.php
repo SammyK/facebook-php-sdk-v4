@@ -33,17 +33,17 @@ class GraphRawResponse
     /**
      * @var array The response headers in the form of an associative array.
      */
-    protected $headers;
+    protected array $headers;
 
     /**
      * @var string The raw response body.
      */
-    protected $body;
+    protected string $body;
 
     /**
      * @var int The HTTP status response code.
      */
-    protected $httpResponseCode;
+    protected int $httpResponseCode;
 
     /**
      * Creates a new GraphRawResponse entity.

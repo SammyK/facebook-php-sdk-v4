@@ -41,47 +41,47 @@ class FacebookRequest
     /**
      * @var FacebookApp The Facebook app entity.
      */
-    protected $app;
+    protected ?FacebookApp $app;
 
     /**
      * @var string|null The access token to use for this request.
      */
-    protected $accessToken;
+    protected ?string $accessToken;
 
     /**
      * @var string The HTTP method for this request.
      */
-    protected $method;
+    protected ?string $method;
 
     /**
      * @var string The Graph endpoint for this request.
      */
-    protected $endpoint;
+    protected ?string $endpoint;
 
     /**
      * @var array The headers to send with this request.
      */
-    protected $headers = [];
+    protected array $headers = [];
 
     /**
      * @var array The parameters to send with this request.
      */
-    protected $params = [];
+    protected array $params = [];
 
     /**
      * @var array The files to send with this request.
      */
-    protected $files = [];
+    protected array $files = [];
 
     /**
      * @var string ETag to send with this request.
      */
-    protected $eTag;
+    protected ?string $eTag;
 
     /**
      * @var string Graph version to use for this request.
      */
-    protected $graphVersion;
+    protected ?string $graphVersion;
 
     /**
      * Creates a new Request entity.

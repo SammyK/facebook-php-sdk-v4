@@ -35,10 +35,10 @@ namespace Facebook\FileUpload;
 class Mimetypes
 {
     /** @var self */
-    protected static $instance;
+    protected static ?self $instance = null;
 
     /** @var array Mapping of extension to mimetype */
-    protected $mimetypes = [
+    protected array $mimetypes = [
         '3dml' => 'text/vnd.in3d.3dml',
         '3g2' => 'video/3gpp2',
         '3gp' => 'video/3gpp',

@@ -40,17 +40,17 @@ abstract class FacebookSignedRequestFromInputHelper
     /**
      * @var SignedRequest|null The SignedRequest entity.
      */
-    protected $signedRequest;
+    protected ?SignedRequest $signedRequest;
 
     /**
      * @var FacebookApp The FacebookApp entity.
      */
-    protected $app;
+    protected FacebookApp $app;
 
     /**
      * @var OAuth2Client The OAuth 2.0 client service.
      */
-    protected $oAuth2Client;
+    protected OAuth2Client $oAuth2Client;
 
     /**
      * Initialize the helper and process available signed request data.

@@ -35,17 +35,17 @@ class SignedRequest
     /**
      * @var FacebookApp The FacebookApp entity.
      */
-    protected $app;
+    protected FacebookApp $app;
 
     /**
      * @var string The raw encrypted signed request.
      */
-    protected $rawSignedRequest;
+    protected string $rawSignedRequest;
 
     /**
      * @var array The payload from the decrypted signed request.
      */
-    protected $payload;
+    protected array $payload;
 
     /**
      * Instantiate a new SignedRequest entity.

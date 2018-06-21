@@ -73,42 +73,42 @@ class Facebook
     /**
      * @var FacebookApp The FacebookApp entity.
      */
-    protected $app;
+    protected FacebookApp $app;
 
     /**
      * @var FacebookClient The Facebook client service.
      */
-    protected $client;
+    protected FacebookClient $client;
 
     /**
      * @var OAuth2Client The OAuth 2.0 client service.
      */
-    protected $oAuth2Client;
+    protected ?OAuth2Client $oAuth2Client = null;
 
     /**
      * @var UrlDetectionInterface|null The URL detection handler.
      */
-    protected $urlDetectionHandler;
+    protected ?UrlDetectionInterface $urlDetectionHandler;
 
     /**
      * @var PseudoRandomStringGeneratorInterface|null The cryptographically secure pseudo-random string generator.
      */
-    protected $pseudoRandomStringGenerator;
+    protected ?PseudoRandomStringGeneratorInterface $pseudoRandomStringGenerator;
 
     /**
      * @var AccessToken|null The default access token to use with requests.
      */
-    protected $defaultAccessToken;
+    protected ?AccessToken $defaultAccessToken;
 
     /**
      * @var string|null The default Graph version we want to use.
      */
-    protected $defaultGraphVersion;
+    protected ?string $defaultGraphVersion;
 
     /**
      * @var PersistentDataInterface|null The persistent data handler.
      */
-    protected $persistentDataHandler;
+    protected ?PersistentDataInterface $persistentDataHandler;
 
     /**
      * @var FacebookResponse|FacebookBatchResponse|null Stores the last request made to Graph.

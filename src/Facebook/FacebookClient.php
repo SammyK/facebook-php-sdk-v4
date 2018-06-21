@@ -73,17 +73,17 @@ class FacebookClient
     /**
      * @var bool Toggle to use Graph beta url.
      */
-    protected $enableBetaMode = false;
+    protected bool $enableBetaMode = false;
 
     /**
      * @var FacebookHttpClientInterface HTTP client handler.
      */
-    protected $httpClientHandler;
+    protected FacebookHttpClientInterface $httpClientHandler;
 
     /**
      * @var int The number of calls that have been made to Graph.
      */
-    public static $requestCount = 0;
+    public static int $requestCount = 0;
 
     /**
      * Instantiates a new FacebookClient object.

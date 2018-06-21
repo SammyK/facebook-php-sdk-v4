@@ -35,12 +35,12 @@ class FacebookResponseException extends FacebookSDKException
     /**
      * @var FacebookResponse The response that threw the exception.
      */
-    protected $response;
+    protected FacebookResponse $response;
 
     /**
      * @var array Decoded response.
      */
-    protected $responseData;
+    protected array $responseData;
 
     /**
      * Creates a FacebookResponseException.

@@ -40,14 +40,14 @@ class AccessTokenMetadata
      *
      * @var array
      */
-    protected $metadata = [];
+    protected array $metadata = [];
 
     /**
      * Properties that should be cast as DateTime objects.
      *
      * @var array
      */
-    protected static $dateProperties = ['expires_at', 'issued_at'];
+    protected static array $dateProperties = ['expires_at', 'issued_at'];
 
     /**
      * @param array $metadata

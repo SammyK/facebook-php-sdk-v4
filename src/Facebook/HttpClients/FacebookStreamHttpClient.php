@@ -31,7 +31,7 @@ class FacebookStreamHttpClient implements FacebookHttpClientInterface
     /**
      * @var FacebookStream Procedural stream wrapper as object.
      */
-    protected $facebookStream;
+    protected FacebookStream $facebookStream;
 
     /**
      * @param FacebookStream|null Procedural stream wrapper as object.

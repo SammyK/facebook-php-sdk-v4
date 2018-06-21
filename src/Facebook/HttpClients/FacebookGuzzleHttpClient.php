@@ -36,7 +36,7 @@ class FacebookGuzzleHttpClient implements FacebookHttpClientInterface
     /**
      * @var \GuzzleHttp\Client The Guzzle client.
      */
-    protected $guzzleClient;
+    protected \GuzzleHttp\Client $guzzleClient;
 
     /**
      * @param \GuzzleHttp\Client|null The Guzzle client.

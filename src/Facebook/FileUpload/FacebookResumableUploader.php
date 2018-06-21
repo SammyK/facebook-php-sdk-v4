@@ -41,22 +41,22 @@ class FacebookResumableUploader
     /**
      * @var FacebookApp
      */
-    protected $app;
+    protected FacebookApp $app;
 
     /**
      * @var string
      */
-    protected $accessToken;
+    protected string $accessToken;
 
     /**
      * @var FacebookClient The Facebook client service.
      */
-    protected $client;
+    protected FacebookClient $client;
 
     /**
      * @var string Graph version to use for this request.
      */
-    protected $graphVersion;
+    protected string $graphVersion;
 
     /**
      * @param FacebookApp             $app

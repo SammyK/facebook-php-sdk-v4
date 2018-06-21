@@ -36,7 +36,7 @@ class FacebookPageTabHelper extends FacebookCanvasHelper
     /**
      * @var array|null
      */
-    protected $pageData;
+    protected ?array $pageData;
 
     /**
      * Initialize the helper and process available signed request data.

@@ -48,28 +48,28 @@ class OAuth2Client
      *
      * @var FacebookApp
      */
-    protected $app;
+    protected FacebookApp $app;
 
     /**
      * The Facebook client.
      *
      * @var FacebookClient
      */
-    protected $client;
+    protected FacebookClient $client;
 
     /**
      * The version of the Graph API to use.
      *
      * @var string
      */
-    protected $graphVersion;
+    protected string $graphVersion;
 
     /**
      * The last request sent to Graph.
      *
      * @var FacebookRequest|null
      */
-    protected $lastRequest;
+    protected ?FacebookRequest $lastRequest;
 
     /**
      * @param FacebookApp    $app

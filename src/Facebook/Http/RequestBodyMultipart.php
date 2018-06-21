@@ -39,17 +39,17 @@ class RequestBodyMultipart implements RequestBodyInterface
     /**
      * @var string The boundary.
      */
-    private $boundary;
+    private string $boundary;
 
     /**
      * @var array The parameters to send with this request.
      */
-    private $params;
+    private array $params;
 
     /**
      * @var array The files to send with this request.
      */
-    private $files = [];
+    private array $files = [];
 
     /**
      * @param array  $params   The parameters to send with this request.

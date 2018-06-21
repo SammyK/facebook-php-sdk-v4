@@ -35,21 +35,23 @@ class FacebookFile
     /**
      * @var string The path to the file on the system.
      */
-    protected $path;
+    protected string $path;
 
     /**
      * @var int The maximum bytes to read. Defaults to -1 (read all the remaining buffer).
      */
-    private $maxLength;
+    private int $maxLength;
 
     /**
      * @var int Seek to the specified offset before reading. If this number is negative, no seeking will occur and reading will start from the current position.
      */
-    private $offset;
+    private int $offset;
 
     /**
      * @var resource The stream pointing to the file.
      */
+    // No resource support?
+    // A.K.A "This page left intentionally blank." :D
     protected $stream;
 
     /**

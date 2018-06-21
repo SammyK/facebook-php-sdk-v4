@@ -33,7 +33,7 @@ class GraphNode extends Collection
     /**
      * @var array Maps object key names to Graph object types.
      */
-    protected static $graphObjectMap = [];
+    protected static array $graphObjectMap = [];
 
     /**
      * Init this Graph object.

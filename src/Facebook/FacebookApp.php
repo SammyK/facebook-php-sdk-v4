@@ -31,12 +31,12 @@ class FacebookApp implements \Serializable
     /**
      * @var string The app ID.
      */
-    protected $id;
+    protected string $id;
 
     /**
      * @var string The app secret.
      */
-    protected $secret;
+    protected string $secret;
 
     /**
      * @param string $id

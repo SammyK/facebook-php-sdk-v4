@@ -41,7 +41,7 @@ class FacebookStream
     /**
      * @var array Response headers from the stream wrapper
      */
-    protected $responseHeaders = [];
+    protected array $responseHeaders = [];
 
     /**
      * Make a new context stream reference instance

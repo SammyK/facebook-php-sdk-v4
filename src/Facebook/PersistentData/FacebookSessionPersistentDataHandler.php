@@ -35,7 +35,7 @@ class FacebookSessionPersistentDataHandler implements PersistentDataInterface
     /**
      * @var string Prefix to use for session variables.
      */
-    protected $sessionPrefix = 'FBRLH_';
+    protected string $sessionPrefix = 'FBRLH_';
 
     /**
      * Init the session handler.

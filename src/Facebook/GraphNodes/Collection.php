@@ -43,7 +43,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate
      *
      * @var array
      */
-    protected $items = [];
+    protected array $items = [];
 
     /**
      * Create a new collection.

@@ -60,12 +60,12 @@ class GraphNodeFactory
     /**
      * @var FacebookResponse The response entity from Graph.
      */
-    protected $response;
+    protected FacebookResponse $response;
 
     /**
      * @var array The decoded body of the FacebookResponse entity from Graph.
      */
-    protected $decodedBody;
+    protected array $decodedBody;
 
     /**
      * Init this Graph object.

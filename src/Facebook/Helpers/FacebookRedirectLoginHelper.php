@@ -49,22 +49,22 @@ class FacebookRedirectLoginHelper
     /**
      * @var OAuth2Client The OAuth 2.0 client service.
      */
-    protected $oAuth2Client;
+    protected OAuth2Client $oAuth2Client;
 
     /**
      * @var UrlDetectionInterface The URL detection handler.
      */
-    protected $urlDetectionHandler;
+    protected UrlDetectionInterface $urlDetectionHandler;
 
     /**
      * @var PersistentDataInterface The persistent data handler.
      */
-    protected $persistentDataHandler;
+    protected PersistentDataInterface $persistentDataHandler;
 
     /**
      * @var PseudoRandomStringGeneratorInterface The cryptographically secure pseudo-random string generator.
      */
-    protected $pseudoRandomStringGenerator;
+    protected PseudoRandomStringGeneratorInterface $pseudoRandomStringGenerator;
 
     /**
      * @param OAuth2Client                              $oAuth2Client          The OAuth 2.0 client service.

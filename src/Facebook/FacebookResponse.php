@@ -37,32 +37,33 @@ class FacebookResponse
     /**
      * @var int The HTTP status code response from Graph.
      */
-    protected $httpStatusCode;
+    protected ?int $httpStatusCode;
 
     /**
      * @var array The headers returned from Graph.
      */
-    protected $headers;
+    protected array $headers;
 
     /**
      * @var string The raw body of the response from Graph.
      */
-    protected $body;
+    protected ?string $body;
 
     /**
      * @var array The decoded body of the Graph response.
      */
+    // Not set b/c sometimes this gets set to bool (from json_decode?)
     protected $decodedBody = [];
 
     /**
      * @var FacebookRequest The original request that returned this response.
      */
-    protected $request;
+    protected FacebookRequest $request;
 
     /**
      * @var FacebookSDKException The exception thrown by this request.
      */
-    protected $thrownException;
+    protected FacebookSDKException $thrownException;
 
     /**
      * Creates a new Response entity.

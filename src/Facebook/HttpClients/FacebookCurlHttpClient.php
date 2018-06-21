@@ -36,12 +36,12 @@ class FacebookCurlHttpClient implements FacebookHttpClientInterface
     /**
      * @var string The client error message
      */
-    protected $curlErrorMessage = '';
+    protected string $curlErrorMessage = '';
 
     /**
      * @var int The curl client error code
      */
-    protected $curlErrorCode = 0;
+    protected int $curlErrorCode = 0;
 
     /**
      * @var string|boolean The raw response from the server
@@ -51,7 +51,7 @@ class FacebookCurlHttpClient implements FacebookHttpClientInterface
     /**
      * @var FacebookCurl Procedural curl as object
      */
-    protected $facebookCurl;
+    protected FacebookCurl $facebookCurl;
 
     /**
      * @param FacebookCurl|null Procedural curl as object
